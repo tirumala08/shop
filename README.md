@@ -1,6 +1,7 @@
 # Prerequsiste  installation
-DOwnload
-Git Bash
+Download "Git Bash" for CLI 
+
+
 Run the command in git bash to install angular 
 >npm install -g @angular/cli
 
