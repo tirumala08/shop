@@ -1,6 +1,9 @@
-# Prerequsiste  installation
-Download "Git Bash" for CLI 
+# Installation and Running process
+Repositorie Path : https://github.com/tirumala08/shop
 
+Prerequsiste Software:
+Download "Git Bash" for CLI 
+Node JS
 
 Run the command in git bash to install angular 
 >npm install -g @angular/cli
@@ -10,6 +13,9 @@ Go to root folder and run command
 
 To run the project 
 >ng serve
+
+To run the Unit Test Case - (Jasmine Karma) - Unit Test case 92% covered
+>npm run test
 
 # ShopProduct
 

@@ -1,22 +1,29 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ProductsComponent } from './products/products.component';
+import { MenuComponent } from './component/menu/menu.component';
+import { ProductsModule } from './modules/products/products.module';
+import { HomeComponent } from './modules/home/home.component';
+import { PageNotFoundComponent } from './modules/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProductsComponent
+    MenuComponent,
+    HomeComponent,
+    PageNotFoundComponent
   ],
   imports: [
-    BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    BrowserModule,
+    HttpClientModule,
+    ProductsModule
   ],
   providers: [],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
